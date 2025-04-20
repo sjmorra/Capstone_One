@@ -1,0 +1,58 @@
+<div class="d-flex align-itmes-center gap-3">
+    <div class="col-6 me-3">
+        <div>
+            <h1 class="mb-4 header">Create a Client</h1>
+            <h2 class="mb-3 subheader">Please fill in this form to create a client.</h2>
+        </div>
+        <hr class="myLine">
+        <form>
+            <div class="mb-3">
+                <label class="formBody" for="name">Name</label>
+                <br>
+                <input class="form-control myCustomFormInput" [(ngModel)]="client.name" type="text" name="name"
+                    id="name" required />
+            </div>
+            <div class="mb-3">
+                <label class="formBody" for="email">Email</label>
+                <br>
+                <input class="form-control myCustomFormInput" [(ngModel)]="client.email" type="text" name="email"
+                    id="email" required />
+            </div>
+            <div class="mb-3">
+                <label class="formBody" for="address">Address</label>
+                <br>
+                <input class="form-control myCustomFormInput" [(ngModel)]="client.address" type="text" name="address"
+                    id="address" required />
+            </div>
+            <div class="mb-3">
+                <label class="formBody" for="password">Password</label>
+                <br>
+                <input class="form-control myCustomFormInput" [(ngModel)]="client.password" type="text" name="password"
+                    id="password" required />
+            </div>
+            <div class="mb-3">
+                <label class="formBody" for="repeatPassword">Repeat Password</label>
+                <br>
+                <input class="form-control myCustomFormInput" [(ngModel)]="client.repeatPassword" type="text"
+                    name="repeatPassword" id="repeatPassword" required />
+            </div>
+            <hr class="myLine">
+            <button (click)="addClient(this.client)" type="button" class="button myCustomButton">Register</button>
+        </form>
+
+
+    </div>
+    <div class="col-6 me-3">
+        <div>
+            <h1 class="mb-4 header">Current Clients</h1>
+            <h2 class="mb-3 subheader">Below is your current client base.</h2>
+        </div>
+        <hr class="myLine me-3">
+        <div *ngFor="let client of clientsList">
+            <div class="clientNames">
+                <p>{{client.name}}</p>
+                <a class="meetingLink" [routerLink]="['/meetings', client.name]">View Meetings</a>
+            </div>
+        </div>
+    </div>
+</div>

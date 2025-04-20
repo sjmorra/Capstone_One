@@ -1,0 +1,57 @@
+.header {
+    font-family: 'times new roman bold';
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.subheader {
+    font-family: 'times new roman';
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.formBody {
+    font-family: 'times new roman bold';
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.myCustomButton {
+    font-family: Arial, Helvetica, sans-serif, bold;
+    font-weight: 70;
+    font-size: 12px;
+    color: black;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.myCustomFormInput {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.myLine{
+    margin-left: 20px;
+    border-top: 2px solid;
+    border-color: black;
+}
+
+.meetingDetails {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightskyblue;
+}
+
+.meetingTime {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 20px;
+    padding: 5px;
+}
